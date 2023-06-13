@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.cell[data-cell]:empty:hover {
+    background-color: #ddd;
+}
